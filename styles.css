@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+.hero-image {
+    position: relative;
+    height: 400px; /* Height of the hero section */
+    background-image: url('path/to/your/hero-background.jpg'); /* Background image */
+    background-size: cover; /* Cover ensures it fills the area */
+    background-position: center; /* Centers the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(0, 0, 0.5, 0.5); /* Dark overlay for contrast */
+}
+
+.logo-image {
+    max-width: 250px; /* Set maximum width for the logo */
+}
+
+.moving-text {
+    color: #ffdd57; /* Text color for high contrast */
+    font-size: 48px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+}
+
+
+
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Space between links */
+}
+
+nav ul li a {
+    color: white; /* White links */
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px; /* Add padding to sections */
+}
+
+h2 {
+   color: #005f73; /* Dark teal for section headings */
+   margin-bottom: 20px; /* Space below headings */
+}
+
+/* Room Container Styles */
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space out room cards evenly */
+}
+
+.room-card {
+   border-radius: 8px; /* Rounded corners for cards */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+   margin-bottom: 20px; /* Space below cards */
+   width: calc(33% - 20px); /* Responsive width for three cards per row with margin adjustment */
+   text-align: center; /* Center text in cards */
+   background-color: white; /* White background for cards */
+}
+
+.room-image {
+   width: 100%; /* Responsive image within card */
+   height: auto; /* Maintain aspect ratio */
+}
+
+/* Gallery Styles */
+.gallery-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center; /* Center-aligns images in gallery */
+}
+
+.gallery-image {
+   width: calc(33% - 20px); /* Responsive width for three images per row with margin adjustment */
+   height: auto; /* Maintain aspect ratio */
+   margin: 10px; /* Adds space between images */
+   border-radius: 8px; /* Optional rounded corners for images */
+}
+
+/* Footer Styles */
+footer {
+   text-align: center;
+   padding: 20px;
+   background-color: #003d3f; /* Darker teal for footer background */
+   color: white; /* White text in footer */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+   .room-card,
+   .gallery-image {
+       width: calc(50% - 20px); /* Two items per row on smaller screens */
+   }
+
+   .moving-text {
+       font-size: 28px; /* Smaller heading on mobile devices */
+   }
+}
+
+@media (max-width: 480px) {
+   .room-card,
+   .gallery-image {
+       width: calc(100% - 20px); /* Full width on mobile devices */
+   }
+}
+
+h1, h2 {
+    color: #005f73; /* Set heading color */
+    text-decoration: none; /* Ensure no decoration is applied */
+}
+
+h2 {
+    border-bottom: 2px solid #005f73; /* Optional: add a bottom border for emphasis */
+    padding-bottom: 10px; /* Space between heading and content */
+}
+
+#inquiry {
+    background-color: #ffffff; /* White background for the inquiry section */
+    padding: 40px 20px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px auto; /* Center the section */
+    max-width: 600px; /* Maximum width for the form */
+}
+
+.inquiry-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.inquiry-form label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+    margin-bottom: 15px; /* Space between inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+.inquiry-form button {
+    background-color: #005f73; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.inquiry-form button:hover {
+    background-color: #003d3f; /* Darker shade on hover */
+}
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#gallery {
+    text-align: left
+    padding: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.thumbnail {
+    width: 150px; /* Size of thumbnail */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Space between thumbnails */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.thumbnail:hover {
+    transform: scale(1.05); /* Slightly enlarge thumbnail on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Image width in modal */
+    max-width: 700px; /* Maximum width for large screens */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-image">
+        <div class="overlay"></div>
+        <img src="C:\Users\SharmaPa\OneDrive - VodafoneZiggo\Documents\hotel\logo.jpeg" alt="Hotel Logo" class="logo-image">
+        <h1 class="moving-text">Welcome to The Grand Kalimpong</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+				 <li><a href="#inquiry">Inquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>		Nestled amidst the breathtaking landscapes of the Himalayas, The Grand Kalimpong offers a serene escape for travelers seeking both adventure and relaxation. Located in the charming hill station of Kalimpong, our hotel is surrounded by lush greenery and stunning mountain views, providing a perfect backdrop for your stay.</p>
+
+
+ <p>At The Grand Hotel, we pride ourselves on delivering exceptional hospitality combined with modern amenities. Our accommodations include a variety of room types, each designed to ensure comfort and tranquility. </p>
+
+ <p>Enjoy:</p>
+<p>Well-Appointed Rooms: Each room features cozy furnishings, modern amenities, and stunning views of the surrounding hills.
+Dining Options: Savor delicious meals at our on-site restaurant, offering a menu inspired by local flavors and international cuisine.</p>
+
+
+<p>Conveniently situated near popular attractions such as the Tharpa Choling Monastery and Mangal Dham Temple, our hotel allows easy access to explore the rich culture and history of Kalimpong. Whether you wish to hike through scenic trails or visit local markets, everything is just a short distance away.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+	<p>Our Standard Rooms offer a cozy retreat, perfect for solo travelers or couples looking to unwind after a day of exploring Kalimpong. 
+Each room is thoughtfully designed with warm colors and comfortable furnishings to create a welcoming atmosphere along with balcony.
+Size: Approximately 200 sq. ft.
+Equipped with King size bed, dressed in high-quality linens for a restful night’s sleep.</p>
+	
+        <div class="room-container">
+            <div class="room-card">
+                <img src="C:\Users\SharmaPa\OneDrive - VodafoneZiggo\Documents\hotel\WhatsApp Image 2024-11-29 at 12.38.32 (4).jpeg" alt="Standard Room" class="room-image">
+                <h3>Standard Room</h3>
+                <p>Enjoy luxury with stunning views.</p>
+            </div>
+
+
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-container">
+             <img src="C:\Users\SharmaPa\OneDrive - VodafoneZiggo\Documents\hotel\WhatsApp Image 2024-11-21 at 08.57.35.jpeg" alt="Building" class="thumbnail" onclick="openModal(this.src)">
+			<img src="C:\Users\SharmaPa\OneDrive - VodafoneZiggo\Documents\hotel\WhatsApp Image 2024-10-21 at 11.50.14 (3).jpeg" alt="the building" class="thumbnail" onclick="openModal(this.src)">
+           
+            <img src="C:\Users\SharmaPa\OneDrive - VodafoneZiggo\Documents\hotel\WhatsApp Image 2024-11-29 at 12.38.32 (4).jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
+            <img src="C:\Users\SharmaPa\OneDrive - VodafoneZiggo\Documents\hotel\WhatsApp Image 2024-11-23 at 08.07.50.jpeg" alt="Garden with sunset" class="thumbnail" onclick="openModal(this.src)">
+			<img src="C:\Users\SharmaPa\OneDrive - VodafoneZiggo\Documents\hotel\WhatsApp Image 2024-11-23 at 08.07.52 (2).jpeg" alt="Garden with sunset" class="thumbnail" onclick="openModal(this.src)">
+			<img src="C:\Users\SharmaPa\OneDrive - VodafoneZiggo\Documents\hotel\WhatsApp Image 2024-10-21 at 11.50.14.jpeg" alt="Garden with sunset" class="thumbnail" onclick="openModal(this.src)">
+            <!-- Add more images as needed -->
+               </div>
+    </section>
+	
+
+
+	
+	<!-- Inquiry Form Section -->
+    <section id="inquiry">
+        <h2>Inquiry Form</h2>
+        <form action="send_inquiry.php" method="POST" class="inquiry-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Grand Kalimpong. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:thegrandkalimpong@gmail.com">thegrandkalimpong@gmail.com</a> | +91 9064502191</p>
+    </footer>
+	<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+
+
+<script src="script.js"></script>
+</body>
+</html>
