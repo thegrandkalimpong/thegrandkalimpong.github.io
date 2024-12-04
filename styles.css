@@ -1,161 +1,339 @@
-.header-image {
-    width: 1000px; /* Set a specific width */
-    height: 400px; /* Maintain aspect ratio */
-}
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    text-align: center; /* Center-aligns text and image */
-}
-
-.moving-text {
-    display: inline-block; /* Allows animation on inline elements */
-    animation: move-left-right 5s linear infinite; /* Animation properties */
-color: #FF00FF;  /* A bright yellow color */
-text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00;
-}
-
-.gallery-container {
-    display: flex; /* Use flexbox for a responsive layout */
-    flex-wrap: wrap; /* Allow images to wrap onto the next line */
-    justify-content: center; /* Center-aligns the images */
-    margin: 20px 0; /* Adds margin above and below the gallery */
-}
-
-.gallery-image {
-    width: 100%; /* Make image responsive */
-    max-width: 300px; /* Set a maximum width for each image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px; /* Adds space between images */
-    border-radius: 8px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow effect */
-}
-
-
-header {
-    background-color: #4CAF50; /* Change this to your desired header background color */
-    color: yellow; /* Change this to ensure text is readable against the background */
-    padding: 20px; /* Add some padding for spacing */
-    text-align: center; /* Center-aligns the header text */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0; /* Removes default padding */
-}
-
-nav ul li {
-    display: inline; /* Keeps links in a single line */
-    margin-right: 20px; /* Space between links */
-}
-
-nav ul li a {
-    color: white; /* Change link color to match the header text */
-    text-decoration: none; /* Remove underline from links */
-}
-
-header h1 {
-    font-size: 36px; /* Change this value to resize the header */
-    line-height: 1.2; /* Adjust line height for better spacing */
-    margin: 0; /* Remove default margin */
-    padding: 10px 0; /* Optional: add padding for spacing */
-}
-
-
-.logo-image {
-    max-width: 1500px; /* Set maximum width */
-    height: 400px; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Space below the logo */
-}
-.hero-image {
-    background-image: url('sunset.jpeg');
-    height: 400px; /* Adjust height as needed */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #4CAF50; /* Header background color */
-    color: white; /* Text color */
-    padding: 20px; /* Padding for spacing */
-    text-align: center; /* Center-aligns header text */
-}
-
-header h1 {
-    font-size: 36px; /* Resize header */
-    line-height: 1.2; /* Adjust line height */
-    margin: 0; /* Remove default margin */
-    padding: 10px 0; /* Optional padding */
-}
-
-.moving-text {
-    display: inline-block;
-    animation: move-left-right 25s linear infinite;
-}
-
-@keyframes move-left-right {
-    0% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-nav {
-    text-align: left;
-}
-
-nav ul {
-    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
     padding: 0;
+    background-color: #EDF9EB; /* #f4f4f4 Light background for contrast */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-nav ul li a {
-    color: white; /* Link color matching header text */
+a {
     text-decoration: none;
 }
 
+/* Header Styles */
+.hero-image {
+    background-image: url('sunset.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(0, 0, 0.5, 0.5); /* Dark overlay for contrast */
+}
+
+.logo-image {
+    position: absolute; /* Use absolute positioning */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 150px; /* Set a specific width for the logo */
+}
+
+.moving-text {
+    color:  white ;/* Dark Green #006400; */
+    font-size: 2.5em; /* Adjust font size as needed */
+    text-align: center; /* Center align if necessary */
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a background color for contrast */
+    padding: 20px; /* Add padding around the nav */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: block; /* Ensure block display for vertical alignment */
+}
+
+nav ul li {
+    margin: 10px 0; /* Space between buttons (vertical spacing) */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color for the buttons */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a.button {
+    background-color: #007BFF; /* Button background color (blue) */
+}
+
+nav a.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* Section Styles */
 section {
-    padding: 20px;
+    padding: 40px 20px; /* Add padding to sections */
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
+h2 {
+   color: #005f73; /* Dark teal for section headings */
+   margin-bottom: 20px; /* Space below headings */
 }
 
-/* Gallery styles */
-.gallery-container {
+/* Room Container Styles */
+.room-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: space-around; /* Space out room cards evenly */
+}
+
+.room-card {
+   border-radius: 8px; /* Rounded corners for cards */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+   margin-bottom: 20px; /* Space below cards */
+   width: calc(33% - 20px); /* Responsive width for three cards per row with margin adjustment */
+   text-align: center; /* Center text in cards */
+   background-color: white; /* White background for cards */
+}
+
+.room-image {
+   width: 100%; /* Responsive image within card */
+   height: auto; /* Maintain aspect ratio */
+}
+
+/* Gallery Styles */
+.gallery-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center; /* Center-aligns images in gallery */
 }
 
 .gallery-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   width: calc(33% - 20px); /* Responsive width for three images per row with margin adjustment */
+   height: auto; /* Maintain aspect ratio */
+   margin: 10px; /* Adds space between images */
+   border-radius: 8px; /* Optional rounded corners for images */
+}
+
+/* Footer Styles */
+footer {
+   text-align: center;
+   padding: 20px;
+   background-color: #003d3f; /* Darker teal for footer background */
+   color: white; /* White text in footer */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+   .room-card,
+   .gallery-image {
+       width: calc(50% - 20px); /* Two items per row on smaller screens */
+   }
+
+   .moving-text {
+       font-size: 28px; /* Smaller heading on mobile devices */
+   }
+}
+
+@media (max-width: 480px) {
+   .room-card,
+   .gallery-image {
+       width: calc(100% - 20px); /* Full width on mobile devices */
+   }
+}
+
+h1, h2 {
+    color: #005f73; /* Set heading color */
+    text-decoration: none; /* Ensure no decoration is applied */
+}
+
+h2 {
+    border-bottom: 2px solid #005f73; /* Optional: add a bottom border for emphasis */
+    padding-bottom: 10px; /* Space between heading and content */
+}
+
+#inquiry {
+    background-color: #ffffff; /* White background for the inquiry section */
+    padding: 40px 20px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px auto; /* Center the section */
+    max-width: 600px; /* Maximum width for the form */
+}
+
+.inquiry-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.inquiry-form label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+    margin-bottom: 15px; /* Space between inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+.inquiry-form button {
+    background-color: #005f73; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.inquiry-form button:hover {
+    background-color: #003d3f; /* Darker shade on hover */
+}
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+#gallery {
+    padding: 20px;
+}
+
+.gallery-container {
+    text-align: center;
+}
+
+.current-image {
+    width: 80%; /* Adjust size as needed */
+    max-width: 600px; /* Maximum width */
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center; /* Center align thumbnails */
+    flex-wrap: wrap; /* Allow wrapping */
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 100px; /* Thumbnail size */
+    margin: 5px;
+    cursor: pointer;
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Image width in modal */
+    max-width: 700px; /* Maximum width for large screens */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+#tariffs {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 40px; /* Padding around the section */
+}
+
+#tariffs h2 {
+    font-size: 2em; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: left; /* Left align the heading */
+}
+
+table {
+    width: 100%; /* Full width of the parent container */
+    border-collapse: collapse; /* Merge borders */
+    margin: 0; /* Remove auto centering */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border for cells */
+    padding: 15px; /* Padding inside cells */
+    text-align: left; /* Left align text in cells */
+}
+
+th {
+    background-color: #007BFF; /* Blue background for header */
+    color: white; /* White text color for header */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+#contact {
+    padding: 40px;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    text-align: left; /* Left align the heading */
+}
+
+#contact p {
+    text-align: left; /* Left align text */
+    font-size: 18px; /* Font size for contact info */
+}
+
+#contact a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
