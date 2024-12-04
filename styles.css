@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes sizing more predictable */
+}
+
+
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -40,7 +48,7 @@ a {
     position: absolute; /* Use absolute positioning */
     top: 20px; /* Adjust as needed */
     right: 20px; /* Adjust as needed */
-    width: 150px; /* Set a specific width for the logo */
+    width: 15px; /* Set a specific width for the logo */
 }
 
 .moving-text {
