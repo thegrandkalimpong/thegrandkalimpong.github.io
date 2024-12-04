@@ -11,17 +11,19 @@
     <header class="hero-image">
         <div class="overlay"></div>
         <img src="logo.jpeg" alt="Hotel Logo" class="logo-image">
-        <h1 style="color: #4d002d";stylesclass="moving-text">Welcome to The Grand Kalimpong</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#rooms">Rooms</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-				 <li><a href="#inquiry">Inquiry</a></li>
-            </ul>
-        </nav>
-    </header>
+        <h1 class="moving-text" style="color=#FF00FF;"><strong>Welcome to The Grand Kalimpong</strong></h1>
+       <nav>
+	     </header>
+    <ul>
+        <li><a href="#about" class="button">About</a></li>
+        <li><a href="#rooms"class="button">Rooms</a></li>
+        <li><a href="#gallery"class="button">Gallery</a></li>
+        <li><a href="#contact" class="button">Contact Us</a></li>
+		<li><a href="#tariffs" class="button">Tarrifs</a></li>
+        <li><a href="#inquiry" class="button">Inquiry</a></li>
+    </ul>
+</nav>
+
 
     <section id="about">
         <h2>About Us</h2>
@@ -47,18 +49,27 @@ Equipped with King size bed, dressed in high-quality linens for a restful nightâ
 	
         <div class="room-container">
             <div class="room-card">
-                <img src="room1.jpeg" alt="Standard Room" class="room-image">
+                <img src="WhatsApp Image 2024-11-29 at 12.38.32 (4).jpeg" alt="Standard Room" class="room-image">
                 <h3>Standard Room</h3>
                 <p>Enjoy luxury with stunning views.</p>
             </div>
-
+<p>Our Deluxe Rooms offer a cozy retreat, perfect for solo travelers or couples looking to unwind after a day of exploring Kalimpong. 
+Each room is thoughtfully designed with warm colors and comfortable furnishings to create a welcoming atmosphere along with balcony.
+Size: Approximately 220 sq. ft.
+Equipped with King size bed, dressed in high-quality linens for a restful nightâ€™s sleep along with amenities.</p>
+	
+        <div class="room-container">
+            <div class="room-card">
+                <img src="room2.jpeg" alt="Standard Room" class="room-image">
+                <h3>Deluxe Room</h3>
+                <p>Enjoy luxury with stunning views and bigger space.</p>
+            </div>
 
     </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <div class="gallery-container">
+<section id="gallery">
+    <h2>Gallery</h2>
+  <div class="gallery-container">
              <img src="hotel.jpeg" alt="Building" class="thumbnail" onclick="openModal(this.src)">
 	<img src="garden.jpeg" alt="the building" class="thumbnail" onclick="openModal(this.src)">
         <img src="senset_garden.jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
@@ -68,15 +79,72 @@ Equipped with King size bed, dressed in high-quality linens for a restful nightâ
           <img src="hlls.jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
 		    <img src="kan.jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
 		    <img src="scene.jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
+			<img src="balcony.jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
+			<img src="room_new.jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
+			<img src="view_balcony.jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
+			<img src="view_balcony.jpeg" alt="Room" class="thumbnail" onclick="openModal(this.src)">
 		    <!-- Add more images as needed -->
                </div>
-
+</section>
 	
 
 
 	
-	<!-- Inquiry Form Section -->
-    <section id="inquiry"> 
+<section id="tariffs">
+    <h2>Tariffs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Room Type</th>
+                <th>Price per Night</th>
+                <th>Includes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Standard Room</td>
+                <td>Rs. 2000</td>
+                <td>Breakfast, Wi-Fi</td>
+            </tr>
+            <tr>
+                <td>Deluxe Room</td>
+                <td>Rs 2500</td>
+                <td>Breakfast, Wi-Fi, Complimentary Drink</td>
+            </tr>
+            <tr>
+                <td>Standard Room + 2 meals</td>
+                <td> Rs 2700</td>
+                <td>Breakfast, Wi-Fi,Lunch or Dinner</td>
+            </tr>
+			<tr>
+                <td>Standard Room + 3 meals</td>
+                <td> Rs 3000</td>
+                <td>Breakfast, Wi-Fi,Lunch,Dinner</td>
+            </tr>
+			            <tr>
+                <td>Deluxe Room + 2 meals</td>
+                <td> Rs 2800</td>
+                <td>Breakfast, Wi-Fi,Lunch or Dinner, Complimentary Drink</td>
+            </tr>
+			<tr>
+                <td>Deluxe Room + 3 meals</td>
+                <td> Rs 3200</td>
+                <td>Breakfast, Wi-Fi,Lunch,Dinner,Complimentary Drink</td>
+        </tbody>
+    </table>
+</section>    
+
+<p>		*******Arrangemnet can be done for bonfire and barques at extra cost.*******</p>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>For booking or reservation, feel free to reach out to us!</p>
+    <p><strong>Phone:</strong> +91 9064502191</p>
+    <p><strong>Email:</strong> <a href="mailto:thegrandkalimpong@gmail.com">thegrandkalimpong@gmail.com</a></p>
+    <p><strong>Address:</strong> Chibbo Approach Road, Kalimpong ,734301</p>
+	<p class="small-text">We take reservations for parties as well; feel free to reach out to us for booking.</p>
+</section>
+
 	
 	<section> 
 	    <title>Inquiry Form</title>
@@ -88,8 +156,11 @@ Equipped with King size bed, dressed in high-quality linens for a restful nightâ
             background-color: #f4f4f4; /* Light background color */
         }
         h1 {
-            text-align: center;
+            text-align: left;
             color: #005f73; /* Dark teal for headings */
+			text-decoration: none;
+			margin-bottom: 20px;
+			border-bottom: 2px solid #005f73;
         }
         .form-container {
             max-width: 800px; /* Maximum width for the form */
@@ -119,7 +190,7 @@ Equipped with King size bed, dressed in high-quality linens for a restful nightâ
 
     <footer>
         <p>&copy; 2024 The Grand Kalimpong. All rights reserved.</p>
-        <p>Contact us at: <a style="color: white"; href="mailto:thegrandkalimpong@gmail.com">thegrandkalimpong@gmail.com</a> | +91 9064502191 | +91 8697719179</p>
+        <p>Contact us at: <a href="mailto:thegrandkalimpong@gmail.com">thegrandkalimpong@gmail.com</a> | +91 9064502191</p>
     </footer>
 	<div id="modal" class="modal" onclick="closeModal()">
     <span class="close">&times;</span>
