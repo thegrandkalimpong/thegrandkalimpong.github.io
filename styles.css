@@ -37,10 +37,10 @@ a {
 }
 
 .logo-image {
-    position: relative; /* Use absolute positioning */
+    position: absolute; /* Use absolute positioning */
     top: 20px; /* Adjust as needed */
     right: 20px; /* Adjust as needed */
-    width: 15px; /* Set a specific width for the logo */
+    width: 150px; /* Set a specific width for the logo */
 }
 
 .moving-text {
